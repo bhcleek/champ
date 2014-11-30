@@ -31,6 +31,6 @@
     "npm": ">= 1.1.x"
   },
   "scripts": {
-    "start": "./bin/hubot --adapter hipchat"
+    "start": "./bin/hubot"
   }
 }
