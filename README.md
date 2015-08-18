@@ -35,7 +35,7 @@ CMD ["--adapter", "hipchat"]
 
 ### Testing Champ in Docker
 
-   docker run --rm -i dockerfile/redis
+   docker run --rm -i --name redis redis
    docker run --rm -i --link redis:redis TAG
 
 ### Building Champ Locally
