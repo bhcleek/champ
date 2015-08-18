@@ -1,10 +1,11 @@
-FROM node:0.10
+FROM node:0.12
 MAINTAINER bhcleek <bhcleek@gmail.com>
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-RUN apt-get install -y libexpat1-dev libicu-dev
+RUN apt-get update && \
+		apt-get install -y libexpat1-dev libicu-dev
 COPY package.json /usr/src/app/
 RUN npm install
 COPY . /usr/src/app
